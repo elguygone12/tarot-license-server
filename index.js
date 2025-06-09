@@ -17,8 +17,8 @@ app.post('/verify-key', async (req, res) => {
   });
 
   const sheets = google.sheets({ version: 'v4', auth });
-  const spreadsheetId = '1QQbJTdC2O68YExG1ECR4F4GKcRY9RBBZ34A3vKvoqDoID';
-  const range = 'Sheet1!A2:C1000'; // adjust if needed
+  const spreadsheetId = '1QQbJTdC2O68YExG1ECR4F4GKcRY9RBBZ34A3vKvoqDo'; // your sheet
+  const range = 'Sheet1!A2:C1000';
 
   try {
     const response = await sheets.spreadsheets.values.get({
